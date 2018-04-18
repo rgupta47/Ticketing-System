@@ -13,7 +13,7 @@
 # Design
 
 # 1.	Ticket: 
-a.	It is a super class, with three subclasses (PhoneCall, Email, InPerson). 
+a.	It is a super class, with three subclasses (PhoneCall, Email, InPerson). /
 b.	These subclasses all share basic ticket info (i.e. String ticketID, String customerRepID, String dateCreated, String customerServiceRepID), customer information (String id,  String name, int phonenumber, String Address). 
 c.	Also, some basic information about the service that the customer has contacted the company about (String serviceID, String serviceStartDate, String serviceEndDate,), 
 d.	and some information about if the contact (boolean isResolved, and int departmentID). departmentID holds the ID of the department that the customer service transfers the ticket to. If the phone call is resolved, then the department ID will be 0. Otherwise, it is something between 1 and 10 (for different departments) or -1 (if the ticket is suspended). 
